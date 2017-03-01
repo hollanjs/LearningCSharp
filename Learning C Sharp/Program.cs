@@ -82,27 +82,26 @@ namespace Learning_C_Sharp
             Console.WriteLine("Bob's Big Giveaway");
             Console.Write("Choose a door: 1, 2 or 3: ");
             string userValue = Console.ReadLine();
+            string message;
 
             if (userValue == "1")
             {
-                string message = "You won a new car!";
-                guessWhat(message);
+                message = "You won a new car!";
             }
             else if (userValue == "2")
             {
-                string message = "You won a new boat!";
-                guessWhat(message);
+                message = "You won a new boat!";
             }
             else if (userValue == "3")
             {
-                string message = "You won a new cat!";
-                guessWhat(message);
+                message = "You won a new cat!";
             }
             else
             {
-                string message = "You're inability to follow directions mean you lose. You win nothing. Sit down, sir/ma'am!";
-                guessWhat(message);
+                message = "You're inability to follow directions mean you lose. You win nothing. Sit down, sir/ma'am!";
             }
+
+            guessWhat(message);
         }
 
         static void guessWhat(string msg)
