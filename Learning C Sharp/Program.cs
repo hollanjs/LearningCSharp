@@ -48,7 +48,7 @@ namespace Learning_C_Sharp
 
         static void Variables()
         {
-            
+
             // int variable example
             int x;
             int y;
@@ -58,7 +58,7 @@ namespace Learning_C_Sharp
 
             Console.WriteLine("y = x + 3");
             Console.WriteLine("Printing the y variable: {0}\n", y);
-            
+
 
             // string variable examples
             Console.WriteLine("What is your name?");
@@ -110,6 +110,76 @@ namespace Learning_C_Sharp
             // "Guess what... " to a message...
             // Pretty sweet, yes?
             Console.WriteLine("Guess what... {0}", msg);
+        }
+
+        static void OperatorsExpressionsStatements()
+        {
+            // variable declaration
+            int x, y, a, b;
+
+            // assignment operator
+            x = 3;
+            y = 2;
+            a = 1;
+            b = 0;
+
+            // ##  Math operators  ## //
+            x = 3 + 4;  // Addition
+            x = 4 - 3;  // Subtraction
+            x = 4 * 3;  // Mulctiplication
+            x = 10 / 5; // Division
+
+            // specify order of operations using parenthesis
+            x = (x + y) * (a - b);
+
+            //Equality operator
+            if (x == y)
+            {
+                // do stuff
+            }
+
+            // Greater than
+            if (x > y)
+            {
+                // do stuff
+            }
+
+            // less than
+            if (x < y)
+            {
+                // do stuff
+            }
+
+            // Greater than or equal to
+            if (x >= y)
+            {
+                // do stuff
+            }
+
+            // Less than or equal too
+            if (x <= y)
+            {
+                // do stuff
+            }
+
+            // AND operator
+            if ((x <= y) && (a > b))
+            {
+                // do stuff
+            }
+
+            // OR operator
+            if ((x <= y) || (a > b))
+            {
+                // do stuff
+            }
+
+            // Turnary, or in-line conditional
+            string youWin = (x == 5) ? "You win!" : "You do not win, in any way, shape or form. Buh-bye.\n";
+
+            // Member access and Method invocation
+            Console.WriteLine("Invoking this message to print to the screen!");
+
         }
     }
 }
