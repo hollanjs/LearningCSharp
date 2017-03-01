@@ -94,6 +94,14 @@ namespace Learning_C_Sharp
                 message = "You're inability to follow directions mean you lose. You win nothing. Sit down, sir/ma'am!";
 
             guessWhat(message);
+
+            // turnary logic example
+            Console.WriteLine("\nAnother Big Bob's Big Giveaway");
+            Console.Write("Now there is only 1 prize!\nChoose a door: 1, 2 or 3: ");
+            userValue = Console.ReadLine();
+
+            message = (userValue == "2") ? "You won a new Boat!" : "Just kidding, there was a secondary prize - an out of focus picture of my feet... Enjoy!";
+            guessWhat(message);
         }
 
         static void guessWhat(string msg)
