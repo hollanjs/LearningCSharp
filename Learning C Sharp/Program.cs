@@ -13,10 +13,25 @@ namespace Learning_C_Sharp
         {
             //testHello(); // testing the functionality of the Hello class
             //Variables(); // tinkering around with int and string
-            Decisions();
+            //Decisions(); // tinkering with if statements
+            ForIteration();
 
             Console.WriteLine("\nPress any key to exit...");
             Console.ReadLine();
+        }
+
+        static void guessWhat(string msg)
+        {
+            // helper function that, you guessed it, just tacks on
+            // "Guess what... " to a message...
+            // Pretty sweet, yes?
+            Console.WriteLine("Guess what... {0}", msg);
+        }
+
+        static void hashLine()
+        {
+            string hashedLine = string.Join("", Enumerable.Repeat("#", 50));
+            Console.WriteLine("\n{0}\n", hashedLine);
         }
 
         static void testHello()
@@ -104,14 +119,6 @@ namespace Learning_C_Sharp
             guessWhat(message);
         }
 
-        static void guessWhat(string msg)
-        {
-            // helper function that, you guessed it, just tacks on
-            // "Guess what... " to a message...
-            // Pretty sweet, yes?
-            Console.WriteLine("Guess what... {0}", msg);
-        }
-
         static void OperatorsExpressionsStatements()
         {
             // variable declaration
@@ -179,6 +186,38 @@ namespace Learning_C_Sharp
 
             // Member access and Method invocation
             Console.WriteLine("Invoking this message to print to the screen!");
+
+        }
+
+        static void ForIteration()
+        {
+            // working through some examples using the "for" statement
+
+            string msg = "";
+            // Print numbers 0-9 with special message if 
+            // a specific number is found
+            for (int i = 0; i < 10; i++)
+            {
+                //set message based on conditional
+                if (i == 7)
+                {
+                    msg = " - Found " + i;
+                }
+                else if (i > 8)
+                {
+                    msg = " - This number is bigger than 8!";
+                }
+
+                // write number and message
+                Console.WriteLine("{0}{1}", i, msg);
+
+                // reset message to default
+                msg = "";
+            }
+
+            // random seperator for fun
+            hashLine();
+            Console.WriteLine("Pretty cool sperator, am I right?");
 
         }
     }
