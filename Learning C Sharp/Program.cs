@@ -256,6 +256,19 @@ namespace Learning_C_Sharp
             {
                 Console.WriteLine(name);
             }
+
+            // string converstion to char[] array to work with order, reversing and so on
+            string quote = "This string will be written backwards in a moment.";
+            char[] charArray = quote.ToCharArray(); // convert string to character array
+            Array.Reverse(charArray); // reverse the character array         
+
+            // now, to loop through char array, we can use foreach and Console.Write()
+            foreach (char c in charArray)
+            {
+                Console.Write(c);
+            }
+
+            hashLine();
         }
     }
 }
