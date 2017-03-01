@@ -1,3 +1,11 @@
 int = 
 float = 
 double = 
+
+- use "ctrl + ." for quick actions.
+	If you want to rename every instance of the same variable:
+	  > Highlight the variable name
+	  > Change it
+	  > Press "ctrl + ."
+	  > Preview changes
+	  > Enter and confirm that update

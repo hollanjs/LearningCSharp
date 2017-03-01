@@ -61,12 +61,16 @@ namespace Learning_C_Sharp
             // string variable examples
             Console.WriteLine("What is your name?");
             Console.Write("Type your first name: ");
+            /*
+             * the following code can also be written like:
+             *      string myFirstName = Console.ReadLine();
+             * this will help save on space
+             */
             string myFirstName;
             myFirstName = Console.ReadLine();
 
-            string myLastName;
-            Console.Write("Type your last name: ");
-            myLastName = Console.ReadLine();
+            Console.Write("Type your last name:  ");
+            string myLastName = Console.ReadLine();
 
             Console.WriteLine("Hello, {0} {1}!", myFirstName, myLastName);
         }
