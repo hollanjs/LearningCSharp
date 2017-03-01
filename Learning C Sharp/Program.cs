@@ -12,6 +12,7 @@ namespace Learning_C_Sharp
         static void Main(string[] args)
         {
             //testHello(); // testing the functionality of the Hello class
+            Variables();
 
             Console.WriteLine("\nPress any key to exit...");
             Console.ReadLine();
@@ -42,6 +43,32 @@ namespace Learning_C_Sharp
             Hi3.finishHim();
 
             Console.WriteLine("\nFinally, we're done, done, done!");
+        }
+
+        static void Variables()
+        {
+            /*
+            // int variable example
+            int x;
+            int y;
+
+            x = 7;
+            y = x + 3;
+
+            Console.WriteLine(y);
+            */
+
+            // string variable examples
+            Console.WriteLine("What is your name?");
+            Console.Write("Type your first name: ");
+            string myFirstName;
+            myFirstName = Console.ReadLine();
+
+            string myLastName;
+            Console.Write("Type your last name: ");
+            myLastName = Console.ReadLine();
+
+            Console.WriteLine("Hello, {0} {1}!", myFirstName, myLastName);
         }
     }
 }
