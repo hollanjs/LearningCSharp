@@ -11,7 +11,7 @@ namespace Learning_C_Sharp
     {
         static void Main(string[] args)
         {
-            testHello();
+            //testHello(); // testing the functionality of the Hello class
 
             Console.WriteLine("\nPress any key to exit...");
             Console.ReadLine();
@@ -19,10 +19,11 @@ namespace Learning_C_Sharp
 
         static void testHello()
         {
-            Hello Hi1 = new Hello();
-            Hello Hi2 = new Hello("Stephen");
+            Hello Hi1 = new Hello(); // running with default name
+            Hello Hi2 = new Hello("Stephen"); // overwriting default
             Hello Hi3 = new Hello();
 
+            // testing getName function to replace name
             Hi1.sayHi();
             Hi1.getName();
             Hi1.sayHi();
@@ -30,11 +31,13 @@ namespace Learning_C_Sharp
 
             Console.WriteLine("\nNext person...");
 
+            // testing sayHi when name is passed into constructor
             Hi2.sayHi();
             Hi2.finishHim();
 
             Console.WriteLine("\nNext person...");
 
+            // running testing finishHim with default not overwritten
             Hi3.sayHi();
             Hi3.finishHim();
 

@@ -19,12 +19,14 @@ namespace Learning_C_Sharp
 
         public void getName()
         {
+            // gets command line input to override name
             Console.Write("What is your name?\n-->  ");
             name = Console.ReadLine();
         }
 
         public void finishHim()
         {
+            // sadly, not as violent as Mortal Combat
             Console.WriteLine("\nAlright, I think we're done here {0}.", name);
         }
 
