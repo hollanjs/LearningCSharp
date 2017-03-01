@@ -12,7 +12,8 @@ namespace Learning_C_Sharp
         static void Main(string[] args)
         {
             //testHello(); // testing the functionality of the Hello class
-            Variables();
+            //Variables(); // tinkering around with int and string
+            Decisions();
 
             Console.WriteLine("\nPress any key to exit...");
             Console.ReadLine();
@@ -47,7 +48,7 @@ namespace Learning_C_Sharp
 
         static void Variables()
         {
-            /*
+            
             // int variable example
             int x;
             int y;
@@ -55,8 +56,9 @@ namespace Learning_C_Sharp
             x = 7;
             y = x + 3;
 
-            Console.WriteLine(y);
-            */
+            Console.WriteLine("y = x + 3");
+            Console.WriteLine("Printing the y variable: {0}\n", y);
+            
 
             // string variable examples
             Console.WriteLine("What is your name?");
@@ -73,6 +75,27 @@ namespace Learning_C_Sharp
             string myLastName = Console.ReadLine();
 
             Console.WriteLine("Hello, {0} {1}!", myFirstName, myLastName);
+        }
+
+        static void Decisions()
+        {
+            Console.WriteLine("Bob's Big Giveaway");
+            Console.Write("Choose a door: 1, 2 or 3: ");
+            string userValue = Console.ReadLine();
+
+            if (userValue == "1")
+            {
+                string message = "You won a new car!";
+                guessWhat(message);
+            }
+        }
+
+        static void guessWhat(string msg)
+        {
+            // helper function that, you guessed it, just tacks on
+            // "Guess what... " to a message...
+            // Pretty sweet, yes?
+            Console.WriteLine("Guess what... {0}", msg);
         }
     }
 }
