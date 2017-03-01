@@ -14,7 +14,8 @@ namespace Learning_C_Sharp
             //testHello(); // testing the functionality of the Hello class
             //Variables(); // tinkering around with int and string
             //Decisions(); // tinkering with if statements
-            ForIteration();
+            //ForIteration(); //working with for loop
+            WorkingWithArrays();
 
             Console.WriteLine("\nPress any key to exit...");
             Console.ReadLine();
@@ -219,6 +220,42 @@ namespace Learning_C_Sharp
             hashLine();
             Console.WriteLine("Pretty cool sperator, am I right?");
 
+        }
+
+        static void WorkingWithArrays()
+        {
+            // Old way of doing it one-by-one
+            int[] numbers = new int[5]; // giving array a specific size in memory
+
+            numbers[0] = 4;
+            numbers[1] = 8;
+            numbers[2] = 15;
+            numbers[3] = 16;
+            numbers[4] = 23;
+
+            Console.WriteLine("Third item in numbers array: {0}", numbers[2]); // calling specific item from array
+            Console.WriteLine("Numbers array length: {0}", numbers.Length); // finding how many items are in array
+
+            hashLine();
+
+            // newer way to make array in one line
+            string[] names = new string[] { "Eddie", "Alex", "Micheal", "David" };
+
+            /*
+             * long way to run through names
+             
+                for (int i = 0; i < names.Length; i++)
+                {
+                    Console.WriteLine(names[i]);
+                }
+
+            */
+
+            //Faster way
+            foreach (string name in names)
+            {
+                Console.WriteLine(name);
+            }
         }
     }
 }
