@@ -85,21 +85,13 @@ namespace Learning_C_Sharp
             string message;
 
             if (userValue == "1")
-            {
                 message = "You won a new car!";
-            }
             else if (userValue == "2")
-            {
                 message = "You won a new boat!";
-            }
             else if (userValue == "3")
-            {
                 message = "You won a new cat!";
-            }
             else
-            {
                 message = "You're inability to follow directions mean you lose. You win nothing. Sit down, sir/ma'am!";
-            }
 
             guessWhat(message);
         }
