@@ -88,6 +88,21 @@ namespace Learning_C_Sharp
                 string message = "You won a new car!";
                 guessWhat(message);
             }
+            else if (userValue == "2")
+            {
+                string message = "You won a new boat!";
+                guessWhat(message);
+            }
+            else if (userValue == "3")
+            {
+                string message = "You won a new cat!";
+                guessWhat(message);
+            }
+            else
+            {
+                string message = "You're inability to follow directions mean you lose. You win nothing. Sit down, sir/ma'am!";
+                guessWhat(message);
+            }
         }
 
         static void guessWhat(string msg)
