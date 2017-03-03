@@ -54,6 +54,17 @@ namespace Learning_C_Sharp
             switchRef(2); // testing switch with default case
             */
 
+            // Tinkering with Animal class
+            /*
+            Animal newAnimal = new Animal();
+            newAnimal.move();
+            newAnimal.Age = -4;
+
+            Animal dog = new Animal();
+            dog.Age = 14;
+            dog.Color = "Brown";
+            */
+
             Console.WriteLine("\nPress any key to exit...");
             Console.ReadLine();
         }
