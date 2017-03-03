@@ -455,9 +455,9 @@ namespace Learning_C_Sharp
             }
         }
 
-        static void errorHandling()
+        static void Divide()
         {
-            string errorMessage;
+            // used for errorHandling examples
             int numerator;
             int denominator;
             int result;
@@ -471,14 +471,30 @@ namespace Learning_C_Sharp
             denominator = Int32.Parse(Console.ReadLine());
             Console.WriteLine();
 
+            try
+            {
+                result = numerator / denominator;
+                Console.WriteLine("The result is {0}", result);
+            }
+            catch (DivideByZeroException dEx)
+            {
+                // one way to rethrow a new exception with custom message up the call stack to be handled by another class of exception
+                // great for passing to a custom log implementation in the program
+                throw new Exception("Division by zero is not permitted. Please change the denominator.", dEx.InnerException);
+            }
+        }
+        static void errorHandling()
+        {
+            string errorMessage;
+
             // try, catch, throw, finally 
             // error handling block statement reference
             try
             {
                 // whatever is in this block is monitored for errors while running
                 // Even if you run other functions, the errors get passed back up the stack
-                result = numerator / denominator;
-                Console.WriteLine("The result is {0}", result);
+                // immediately after they're encountered
+                Divide();
             }
             catch (OverflowException ofEx)
             {
