@@ -46,6 +46,8 @@ namespace Learning_C_Sharp
             static (class) - Remember the distinction between "Class" and "Object" ? Forget all that. They are the same with "static"... the class is the one-and-only instance of itself.
 
             static (method) - Whenever you use this method, it will have a frame of reference independent of the actual instance of the class it is part of.
+
+            if using a method within a static method, the method needs to be static as well. you can only use static methods within static methods.
         
          *  //VOID//
             void just means that you have a method that doesn't return anything.
