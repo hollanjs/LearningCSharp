@@ -9,25 +9,9 @@ namespace Learning_C_Sharp
 {
     class Program
     {
-        static void Main(string[] args)
-        {
-            //testHello(); // testing the functionality of the Hello class
-            //Variables(); // tinkering around with int and string
-            //Decisions(); // tinkering with if statements
-            //ForIteration(); // working with for loop
-            //WorkingWithArrays(); // array example with forearch
-            //typeExamples(); // type examples
-            //whileAndDoWhileLoops(); // example of while loops
 
-            /* example of switch reference
-            switchRef(0); // testing switch with first case
-            switchRef(1); // testing switch with second case
-            switchRef(2); // testing switch with default case
-            */
-
-            Console.WriteLine("\nPress any key to exit...");
-            Console.ReadLine();
-        }
+        // ctrl + k  - comments out lines of code
+        // cw then tab twice   - writes out Console.WriteLine()
 
         /*  NOTES ON METHOD TYPES: [access modifier?] [static?] [return type or void] [name] ([parameters?])
             
@@ -54,6 +38,25 @@ namespace Learning_C_Sharp
             Otherwise, just state the return type
          */
 
+        static void Main(string[] args)
+        {
+            //testHello(); // testing the functionality of the Hello class
+            //Variables(); // tinkering around with int and string
+            //Decisions(); // tinkering with if statements
+            //ForIteration(); // working with for loop
+            //WorkingWithArrays(); // array example with forearch
+            //typeExamples(); // type examples
+            //whileAndDoWhileLoops(); // example of while loops
+
+            /* example of switch reference
+            switchRef(0); // testing switch with first case
+            switchRef(1); // testing switch with second case
+            switchRef(2); // testing switch with default case
+            */
+
+            Console.WriteLine("\nPress any key to exit...");
+            Console.ReadLine();
+        }
 
         static void guessWhat(string msg)
         {
