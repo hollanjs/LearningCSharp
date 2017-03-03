@@ -14,8 +14,9 @@ namespace Learning_C_Sharp
             //testHello(); // testing the functionality of the Hello class
             //Variables(); // tinkering around with int and string
             //Decisions(); // tinkering with if statements
-            //ForIteration(); //working with for loop
-            WorkingWithArrays();
+            //ForIteration(); // working with for loop
+            //WorkingWithArrays(); // array example with forearch
+            typeExamples(); // type examples
 
             Console.WriteLine("\nPress any key to exit...");
             Console.ReadLine();
@@ -269,6 +270,43 @@ namespace Learning_C_Sharp
             }
 
             hashLine();
+        }
+
+        static void typeExamples()
+        {
+            // numeric data types
+            sbyte aSignedByte = 127;
+            byte aByte = 255;
+            ushort anUnsignedShort = 65535;
+            short aShort = 32767;
+            int anInt = 2147483647;
+            uint anUnsignedInt = 4294967295;
+            ulong anUnsignedLong = 18446744073709551615;
+            long aLong = 9223372036854775807;
+            float aFloat = 105.5678493F;
+            double aDouble = 105.567849312873245;
+            decimal aDecimal = 105.8492379759487492387492374982347987293487M;
+
+            // Character data types
+            char aChar = 'A'; // must use single quotes
+            string aString = "A string of chars"; // must use double quotes
+
+            // Boolean data types
+            bool trueResult = true;
+            bool falseResult = false;
+
+            // Output values, .NET types, size of data type and max value
+            Console.WriteLine("aSignedByte value is {0}\nWhich has type: {1}\nAnd hase a size of: {2} Byte(s)\nMax Value: {3}\nMin Value: {4}\n\n", aSignedByte, typeof(sbyte), sizeof(sbyte), sbyte.MaxValue, sbyte.MinValue);
+            Console.WriteLine("aByte value is {0}\nWhich has type: {1}\nAnd hase a size of: {2} Byte(s)\nMax Value: {3}\nMin Value: {4}\n\n", aByte, typeof(byte), sizeof(byte), byte.MaxValue, byte.MinValue);
+            Console.WriteLine("anUnsignedShort value is {0}\nWhich has type: {1}\nAnd hase a size of: {2} Byte(s)\nMax Value: {3}\nMin Value: {4}\n\n", anUnsignedShort, typeof(ushort), sizeof(ushort), ushort.MaxValue, ushort.MinValue);
+            Console.WriteLine("aShort value is {0}\nWhich has type: {1}\nAnd hase a size of: {2} Byte(s)\nMax Value: {3}\nMin Value: {4}\n\n", aShort, typeof(short), sizeof(short), short.MaxValue, short.MinValue);
+            Console.WriteLine("anInt value is {0}\nWhich has type: {1}\nAnd hase a size of: {2} Byte(s)\nMax Value: {3}\nMin Value: {4}\n\n", anInt, typeof(int), sizeof(int), int.MaxValue, int.MinValue);
+            Console.WriteLine("anUnsignedInt value is {0}\nWhich has type: {1}\nAnd hase a size of: {2} Byte(s)\nMax Value: {3}\nMin Value: {4}\n\n", anUnsignedInt, typeof(uint), sizeof(uint), uint.MaxValue, uint.MinValue);
+            Console.WriteLine("anUnsignedLong value is {0}\nWhich has type: {1}\nAnd hase a size of: {2} Byte(s)\nMax Value: {3}\nMin Value: {4}\n\n", anUnsignedLong, typeof(ulong), sizeof(ulong), ulong.MaxValue, ulong.MinValue);
+            Console.WriteLine("aLong value is {0}\nWhich has type: {1}\nAnd hase a size of: {2} Byte(s)\nMax Value: {3}\nMin Value: {4}\n\n", aLong, typeof(long), sizeof(long), long.MaxValue, long.MinValue);
+            Console.WriteLine("aFloat value is {0}\nWhich has type: {1}\nAnd hase a size of: {2} Byte(s)\nMax Value: {3}\nMin Value: {4}\n\n", aFloat, typeof(float), sizeof(float), float.MaxValue, float.MinValue);
+            Console.WriteLine("aDouble value is {0}\nWhich has type: {1}\nAnd hase a size of: {2} Byte(s)\nMax Value: {3}\nMin Value: {4}\n\n", aDouble, typeof(double), sizeof(double), double.MaxValue, double.MinValue);
+            Console.WriteLine("aDecimal value is {0}\nWhich has type: {1}\nAnd hase a size of: {2} Byte(s)\nMax Value: {3}\nMin Value: {4}\n\n", aDecimal, typeof(decimal), sizeof(decimal), decimal.MaxValue, decimal.MinValue);
         }
     }
 }
