@@ -21,5 +21,19 @@ namespace Automobiles
         {
             Console.WriteLine("The {0} {1} {2} has stopped", this.color, this.make, this.model);
         }
+
+        public Car()
+        {
+            this.make = "cheap";
+            this.model = "piece of crap";
+            this.color = "beige";
+        }
+
+        public Car(string mk, string mdl, string clr)
+        {
+            this.make = mk;
+            this.model = mdl;
+            this.color = clr;
+        }
     }
 }

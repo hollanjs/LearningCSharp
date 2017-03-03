@@ -83,12 +83,23 @@ namespace Learning_C_Sharp
             */
 
             // Tinkering with Car class from Autmobile namespace
+            /*
             Car myCar = new Car();
             myCar.color = "silver";
             myCar.make = "Pontiac";
             myCar.model = "G6";
             myCar.Drive();
             myCar.Stop();
+
+            Car posCar = new Car();
+            posCar.Drive();
+            posCar.Stop();
+
+            Car fancyCar = new Car("Aston Martin", "DB5", "red");
+            fancyCar.Drive();
+            fancyCar.Stop();
+            */
+
 
 
             Console.WriteLine("\nPress any key to exit...");
