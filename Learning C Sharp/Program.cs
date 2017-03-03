@@ -17,7 +17,13 @@ namespace Learning_C_Sharp
             //ForIteration(); // working with for loop
             //WorkingWithArrays(); // array example with forearch
             //typeExamples(); // type examples
-            whileAndDoWhileLoops(); // example of while loops
+            //whileAndDoWhileLoops(); // example of while loops
+
+            /* example of switch reference
+            switchRef(0); // testing switch with first case
+            switchRef(1); // testing switch with second case
+            switchRef(2); // testing switch with default case
+            */
 
             Console.WriteLine("\nPress any key to exit...");
             Console.ReadLine();
@@ -328,6 +334,25 @@ namespace Learning_C_Sharp
             } while (sentinel2 < 10);
 
 
+        }
+
+        static void switchRef(int num)
+        {
+            int val = num;
+            switch (val)
+            {
+                case (0):
+                    Console.WriteLine("Value is 0");
+                    break;
+
+                case (1):
+                    Console.WriteLine("Value is 1");
+                    break;
+
+                default:
+                    Console.WriteLine("Value is something other than 0 or 1");
+                    break;
+            }
         }
     }
 }
