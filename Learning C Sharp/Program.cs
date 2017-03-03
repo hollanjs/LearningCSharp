@@ -100,7 +100,7 @@ namespace Learning_C_Sharp
             fancyCar.Stop();
             */
 
-
+            errorHandling(); // use 0 as denominator for DivideByZeroException error
 
             Console.WriteLine("\nPress any key to exit...");
             Console.ReadLine();
@@ -452,6 +452,52 @@ namespace Learning_C_Sharp
                 default:
                     Console.WriteLine("Value is something other than 0 or 1");
                     break;
+            }
+        }
+
+        static void errorHandling()
+        {
+            string errorMessage;
+            int numerator;
+            int denominator;
+            int result;
+
+            Console.Write("Enter the numerator: ");
+            // remember you can parse strings to int with Int32.Parse()
+            numerator = Int32.Parse(Console.ReadLine());
+            Console.WriteLine();
+
+            Console.Write("Enter the denominator: ");
+            denominator = Int32.Parse(Console.ReadLine());
+            Console.WriteLine();
+
+            // try, catch, throw, finally 
+            // error handling block statement reference
+            try
+            {
+                // whatever is in this block is monitored for errors while running
+                result = numerator / denominator;
+                Console.WriteLine("The result is {0}", result);
+            }
+            catch (OverflowException ofEx)
+            {
+                errorMessage = ofEx.Message;
+                Console.WriteLine(errorMessage);
+            }
+            catch (DivideByZeroException dEx)
+            {
+                errorMessage = dEx.Message;
+                Console.WriteLine(errorMessage);
+            }
+            catch (Exception e) // if not above, use this generic Exception to catch what is going on
+            {
+                errorMessage = e.Message;
+                Console.WriteLine(errorMessage);
+            }
+            finally
+            {
+                // cleanup code if everything else is missed
+                // could close files or connection to databases
             }
         }
     }
