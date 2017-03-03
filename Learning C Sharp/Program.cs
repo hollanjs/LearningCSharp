@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.IO;
 
-//import Animals namespace to use Animal, Dog and Cat classes
+//import Animals & Autmobiles namespace to use Car, Animal, Dog and Cat classes
 using Animals;
+using Automobiles;
 
 namespace Learning_C_Sharp
 {
@@ -72,7 +72,7 @@ namespace Learning_C_Sharp
             // Dog subclass which inherits from animal
             // needed to imporst namespace Animal at top
             // in order to use Animal and Animal child classes
-
+            /*
             Dog Fido = new Dog();
             Fido.Age = 4;
             Fido.Color = "white";
@@ -80,7 +80,15 @@ namespace Learning_C_Sharp
             Fido.move();
             Fido.makeNoise();
             Console.WriteLine("{0} is {1} years old and has {2} colored fur.", Fido.name, Fido.Age, Fido.Color);
+            */
 
+            // Tinkering with Car class from Autmobile namespace
+            Car myCar = new Car();
+            myCar.color = "silver";
+            myCar.make = "Pontiac";
+            myCar.model = "G6";
+            myCar.Drive();
+            myCar.Stop();
 
 
             Console.WriteLine("\nPress any key to exit...");
