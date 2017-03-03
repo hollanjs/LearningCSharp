@@ -69,9 +69,29 @@ namespace Learning_C_Sharp
 
             Console.WriteLine("\nFinally, we're done, done, done!");
         }
+        
+        struct Person
+        {
+            /* struct type
+             * use for small objects, probably mostly computational needs, like math
+             * or for storing point values like x, y, z
+             */
+            int age;
+            string firstName;
+            string lastName;
+        }   
 
         static void Variables()
         {
+            /*
+             * const int NUM_MONTHS = 12;
+             * const = constant value - can't change or update.
+             * NUM_MONTHS = uppercase is general convention for constants
+             */
+
+            const int NUM_MONTHS = 12;
+            // NUM_MONTHS = 14;  // can't reassign!!! can't do this!!!
+            Console.WriteLine("I made a const variable NUM_MONTHS which can't be changed. It will always be: {0}", NUM_MONTHS);
 
             // int variable example
             int x;
