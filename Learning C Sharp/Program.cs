@@ -65,6 +65,15 @@ namespace Learning_C_Sharp
             dog.Color = "Brown";
             */
 
+            // Tinkering with inheritance
+            // Dog subclass which inherits from animal
+            Dog Fido = new Dog();
+            Fido.Age = 4;
+            Fido.Color = "white";
+            Fido.Name = "Fido";
+            Fido.move();
+            Console.WriteLine("{0} is {1} years old and has {2} colored fur.", Fido.Name, Fido.Age, Fido.Color);
+
             Console.WriteLine("\nPress any key to exit...");
             Console.ReadLine();
         }
