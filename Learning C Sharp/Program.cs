@@ -51,7 +51,8 @@ namespace Learning_C_Sharp
             //typeExamples(); // type examples
             //whileAndDoWhileLoops(); // example of while loops
 
-            /* example of switch reference
+            // example of switch reference
+            /*
             switchRef(0); // testing switch with first case
             switchRef(1); // testing switch with second case
             switchRef(2); // testing switch with default case
@@ -101,8 +102,7 @@ namespace Learning_C_Sharp
             */
 
             //errorHandling(); // use 0 as denominator for DivideByZeroException error
-
-            // exceptionExample();
+            //exceptionExample(); // will purposely throw an exception
 
             Console.WriteLine("\nPress any key to exit...");
             Console.ReadLine();

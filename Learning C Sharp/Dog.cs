@@ -12,6 +12,27 @@ namespace Animals
         public string name { get; set; }
         public string owner { get; set; }
         
+        public Dog() // base constructor
+        {
+            // base initialization if no parameters passed
+            this.name = "Stray";
+            this.owner = "No Owner";
+        }
+
+        public Dog(string newName, string newOwner)
+        {
+            // Initialization with parameters
+            this.name = newName;
+            this.owner = newOwner;
+        }
+
+         ~Dog() // Deconstructor
+        {
+            // cleanup statements
+            // only if a deconstructor is provided will Finalize() be called
+            // if no deconstructor, there is no Finalize() method provided
+        }
+
         // use override in the subclass if overriding original parent function
         public override void move()
         {
