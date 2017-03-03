@@ -75,6 +75,9 @@ namespace Learning_C_Sharp
             /* struct type
              * use for small objects, probably mostly computational needs, like math
              * or for storing point values like x, y, z
+             * 
+             * don't put in fuction - should be defined
+             * within the class next to the functions
              */
             int age;
             string firstName;
