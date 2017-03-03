@@ -476,6 +476,7 @@ namespace Learning_C_Sharp
             try
             {
                 // whatever is in this block is monitored for errors while running
+                // Even if you run other functions, the errors get passed back up the stack
                 result = numerator / denominator;
                 Console.WriteLine("The result is {0}", result);
             }
