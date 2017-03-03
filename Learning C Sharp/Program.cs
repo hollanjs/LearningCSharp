@@ -16,7 +16,8 @@ namespace Learning_C_Sharp
             //Decisions(); // tinkering with if statements
             //ForIteration(); // working with for loop
             //WorkingWithArrays(); // array example with forearch
-            typeExamples(); // type examples
+            //typeExamples(); // type examples
+            whileAndDoWhileLoops(); // example of while loops
 
             Console.WriteLine("\nPress any key to exit...");
             Console.ReadLine();
@@ -307,6 +308,26 @@ namespace Learning_C_Sharp
             Console.WriteLine("aFloat value is {0}\nWhich has type: {1}\nAnd hase a size of: {2} Byte(s)\nMax Value: {3}\nMin Value: {4}\n\n", aFloat, typeof(float), sizeof(float), float.MaxValue, float.MinValue);
             Console.WriteLine("aDouble value is {0}\nWhich has type: {1}\nAnd hase a size of: {2} Byte(s)\nMax Value: {3}\nMin Value: {4}\n\n", aDouble, typeof(double), sizeof(double), double.MaxValue, double.MinValue);
             Console.WriteLine("aDecimal value is {0}\nWhich has type: {1}\nAnd hase a size of: {2} Byte(s)\nMax Value: {3}\nMin Value: {4}\n\n", aDecimal, typeof(decimal), sizeof(decimal), decimal.MaxValue, decimal.MinValue);
+        }
+
+        static void whileAndDoWhileLoops()
+        {
+            // while loop
+            int sentinel = 0; // need something to use to cancel out of loop
+            while (sentinel < 10)
+            {
+                Console.WriteLine("From while loop: {0}", sentinel);
+                sentinel++;
+            }
+
+            int sentinel2 = 0;
+            do //processes do first, then while loop. use if you need to execute something at least once.
+            {
+                Console.WriteLine("From do...while loop: {0}", sentinel2);
+                sentinel2++;
+            } while (sentinel2 < 10);
+
+
         }
     }
 }
