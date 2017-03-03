@@ -100,7 +100,9 @@ namespace Learning_C_Sharp
             fancyCar.Stop();
             */
 
-            errorHandling(); // use 0 as denominator for DivideByZeroException error
+            //errorHandling(); // use 0 as denominator for DivideByZeroException error
+
+            // exceptionExample();
 
             Console.WriteLine("\nPress any key to exit...");
             Console.ReadLine();
@@ -516,6 +518,30 @@ namespace Learning_C_Sharp
                 // cleanup code if everything else is missed
                 // could close files or connection to databases
             }
+        }
+
+        static void exceptionExample()
+        {
+            int intValue = 32;
+            object objValue = intValue;
+            string strValue;
+
+            try
+            {
+                strValue = (string)objValue;
+            }
+            catch (InvalidCastException icEx)
+            {
+                Console.WriteLine("Invalid Cast Exception: {0}", icEx.Message);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Message: {0}", e.Message);
+                Console.WriteLine("To String: {0}", e.ToString());
+                Console.WriteLine("Data: {0}", e.Data);
+                Console.WriteLine("Get Type: {0}", e.GetType());
+            }
+            
         }
     }
 }
