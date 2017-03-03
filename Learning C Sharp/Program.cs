@@ -29,6 +29,30 @@ namespace Learning_C_Sharp
             Console.ReadLine();
         }
 
+        /*  NOTES ON METHOD TYPES: [access modifier?] [static?] [return type or void] [name] ([parameters?])
+            
+         *  //ACCESS MODIFIERS//
+            public - If you can see the class, then you can see the method
+
+            private - If you are part of the class or struct, then you can see the method, otherwise not.
+
+            protected - Same as Private, plus all descendants can also see the method.
+
+            internal - The type or member can be accessed by any code in the same assembly, but not from another assembly.
+
+            protected Internal - The type or member can be accessed by any code in the same assembly, or by any derived class in another assembly.
+           
+         *  //STATIC//
+            static (class) - Remember the distinction between "Class" and "Object" ? Forget all that. They are the same with "static"... the class is the one-and-only instance of itself.
+
+            static (method) - Whenever you use this method, it will have a frame of reference independent of the actual instance of the class it is part of.
+        
+         *  //VOID//
+            void just means that you have a method that doesn't return anything.
+            Otherwise, just state the return type
+         */
+
+
         static void guessWhat(string msg)
         {
             // helper function that, you guessed it, just tacks on
@@ -79,7 +103,7 @@ namespace Learning_C_Sharp
              * don't put in fuction - should be defined
              * within the class next to the functions
              */
-            int age;
+        int age;
             string firstName;
             string lastName;
         }   
