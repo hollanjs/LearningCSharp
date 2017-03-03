@@ -45,14 +45,15 @@ namespace Learning_C_Sharp
             set { this.color = value; }
         }
 
-        public void move()
+        // use virtual if you're going to be overriding this in a sub class
+        public virtual void move()
         {
             Console.WriteLine("moved");
         }
 
-        public void makeNoise()
+        public virtual void makeNoise()
         {
-
+            Console.WriteLine("This animal is making a lot of noise");
         }
     }
 }

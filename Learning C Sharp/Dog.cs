@@ -8,11 +8,23 @@ namespace Learning_C_Sharp
 {
     class Dog : Animal
     {
-        public string Name { get; set; }
-
-        public void move()
+        // one line setters and getters
+        public string name { get; set; }
+        public string owner { get; set; }
+        
+        // use override in the subclass if overriding original parent function
+        public override void move()
         {
-            Console.WriteLine("{0} moved.", this.Name);
+            // to call parent function, you can write:
+            //base.move();
+            Console.WriteLine("{0} is running.", this.name);
+        }
+
+        public override void makeNoise()
+        {
+            // to call parent function, you can write:
+            //base.makeNoise();
+            Console.WriteLine("Bark bark mutha trucka!");
         }
     }
 }
