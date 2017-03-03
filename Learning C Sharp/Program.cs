@@ -5,6 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 
+//import Animals namespace to use Animal, Dog and Cat classes
+using Animals;
+
 namespace Learning_C_Sharp
 {
     class Program
@@ -67,6 +70,9 @@ namespace Learning_C_Sharp
 
             // Tinkering with inheritance
             // Dog subclass which inherits from animal
+            // needed to imporst namespace Animal at top
+            // in order to use Animal and Animal child classes
+
             Dog Fido = new Dog();
             Fido.Age = 4;
             Fido.Color = "white";
@@ -74,6 +80,8 @@ namespace Learning_C_Sharp
             Fido.move();
             Fido.makeNoise();
             Console.WriteLine("{0} is {1} years old and has {2} colored fur.", Fido.name, Fido.Age, Fido.Color);
+
+
 
             Console.WriteLine("\nPress any key to exit...");
             Console.ReadLine();
