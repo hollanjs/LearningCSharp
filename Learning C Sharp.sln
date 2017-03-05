@@ -4,6 +4,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Learning C Sharp", "Learning C Sharp\Learning C Sharp.csproj", "{2F498100-CCD1-430D-99B0-F83122A8E9C2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{B7DEADDF-431A-420F-B334-9B5A13386D28} = {B7DEADDF-431A-420F-B334-9B5A13386D28}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "w3schools Practice Problems", "w3schools Practice Problems\w3schools Practice Problems.csproj", "{B7DEADDF-431A-420F-B334-9B5A13386D28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "w3schools Practice ProblemsTests", "w3schools Practice ProblemsTests\w3schools Practice ProblemsTests.csproj", "{078460A2-348E-4F77-A837-CA87EF980452}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proj Euler - Multiples of 3 and 5", "Proj Euler - Multiples of 3 and 5\Proj Euler - Multiples of 3 and 5.csproj", "{A9AA0D26-8264-4BD4-9CF4-00DCA28AFD1A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Proj Euler - Multiples of 3 and 5Tests", "Proj Euler - Multiples of 3 and 5Tests\Proj Euler - Multiples of 3 and 5Tests.csproj", "{6D104AD8-6FE6-4841-8C51-D22721710761}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +26,22 @@ Global
 		{2F498100-CCD1-430D-99B0-F83122A8E9C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F498100-CCD1-430D-99B0-F83122A8E9C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F498100-CCD1-430D-99B0-F83122A8E9C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7DEADDF-431A-420F-B334-9B5A13386D28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7DEADDF-431A-420F-B334-9B5A13386D28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7DEADDF-431A-420F-B334-9B5A13386D28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7DEADDF-431A-420F-B334-9B5A13386D28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{078460A2-348E-4F77-A837-CA87EF980452}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{078460A2-348E-4F77-A837-CA87EF980452}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{078460A2-348E-4F77-A837-CA87EF980452}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{078460A2-348E-4F77-A837-CA87EF980452}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9AA0D26-8264-4BD4-9CF4-00DCA28AFD1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9AA0D26-8264-4BD4-9CF4-00DCA28AFD1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9AA0D26-8264-4BD4-9CF4-00DCA28AFD1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9AA0D26-8264-4BD4-9CF4-00DCA28AFD1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D104AD8-6FE6-4841-8C51-D22721710761}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D104AD8-6FE6-4841-8C51-D22721710761}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D104AD8-6FE6-4841-8C51-D22721710761}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D104AD8-6FE6-4841-8C51-D22721710761}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
