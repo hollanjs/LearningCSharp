@@ -10,6 +10,10 @@ namespace Delegates_Events_Lambdas
     public delegate string MathDelegate(int arg1, int arg2);
     #endregion
 
+    #region Define Anonymous Delegate
+    public delegate int AnonymousDelegate(int i, string s);
+    #endregion
+
     class Program
     {
         #region Functions and Setup for Delegate
@@ -54,6 +58,20 @@ namespace Delegates_Events_Lambdas
             mathFunc = divFunc;
             print(num1, num2, mathFunc);
             */
+            #endregion
+
+            #region Anonymous Delegate Testing
+            // I'm guessing can be setup wherever?
+            AnonymousDelegate anonFunc = delegate (int i, string s) 
+            {
+                Console.WriteLine($"Number: {i}\nString: {s}");
+                Console.WriteLine("For the hell of it, we're just going to return the number provided by 2");
+                Console.WriteLine($"So, {1} * 2 = {i*2}");
+                Console.WriteLine("Go ahead, pass this function as a parameter into a Console.WriteLine and see whay pops out on the next line!");
+                return i * 2;
+            };
+
+            Console.WriteLine(anonFunc(25, "Cincinnati"));
             #endregion
 
         }
