@@ -60,7 +60,9 @@ namespace Delegates_Events_Lambdas
             */
             #endregion
 
+            // Uncomment Anonymous Delegate Testing region to run
             #region Anonymous Delegate Testing
+            /*
             // I'm guessing can be setup wherever?
             AnonymousDelegate anonFunc = delegate (int i, string s) 
             {
@@ -72,6 +74,7 @@ namespace Delegates_Events_Lambdas
             };
 
             Console.WriteLine(anonFunc(25, "Cincinnati"));
+            */
             #endregion
 
         }
